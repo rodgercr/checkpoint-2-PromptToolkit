@@ -1,0 +1,119 @@
+{
+  "classificacao_sentimento": [
+    {
+      "input": "Produto excelente! Chegou dois dias antes do prazo, embalagem impecável e a qualidade superou minhas expectativas. Já indiquei para todos os meus amigos.",
+      "esperado": "POSITIVO"
+    },
+    {
+      "input": "Lixo absoluto. O produto veio com defeito de fábrica, o suporte demorou 10 dias para responder e ainda me mandaram o mesmo produto quebrado novamente. Nunca mais compro aqui.",
+      "esperado": "NEGATIVO"
+    },
+    {
+      "input": "A entrega atrasou quase uma semana sem aviso, mas o produto em si é bom. Qualidade do material é ok, mas esperava mais pela embalagem simples.",
+      "esperado": "MISTO"
+    },
+    {
+      "input": "Recebi o produto conforme descrito. Prazo de entrega dentro do esperado. Nada a reclamar, nada a elogiar.",
+      "esperado": "NEUTRO"
+    },
+    {
+      "input": "Que decepção! O tênis veio com tamanho errado mesmo eu tendo especificado na compra. A devolução foi rápida, isso sim, mas perdi uma semana esperando.",
+      "esperado": "MISTO"
+    },
+    {
+      "input": "Simplesmente perfeito. O fone de ouvido tem qualidade de som incrível, bateria que dura o dia inteiro e o estojo de couro é elegante. Vale cada centavo dos R$450.",
+      "esperado": "POSITIVO"
+    },
+    {
+      "input": "Produto veio com manual apenas em inglês e sem garantia nacional. A loja não informou isso na descrição. Totalmente enganoso.",
+      "esperado": "NEGATIVO"
+    }
+  ],
+  "extracao_dados": [
+    {
+      "input": "Meu notebook Lenovo IdeaPad de R$3.200 parou de ligar do nada essa manhã, tenho uma apresentação importante hoje à tarde, preciso de solução URGENTE!",
+      "esperado": {
+        "produto": "Notebook Lenovo IdeaPad",
+        "preco": "R$3.200",
+        "defeito": "não liga",
+        "urgencia": "alta"
+      }
+    },
+    {
+      "input": "Comprei uma Smart TV Samsung 55'' por R$2.800 e depois de duas semanas a tela começou a apresentar listras verticais na imagem. Não é urgente mas quero resolver.",
+      "esperado": {
+        "produto": "Smart TV Samsung 55''",
+        "preco": "R$2.800",
+        "defeito": "listras verticais na tela",
+        "urgencia": "media"
+      }
+    },
+    {
+      "input": "O aspirador Dyson V11 de R$3.500 que recebi não está carregando direito, a bateria dura só 10 minutos ao invés de 60. Mas consigo usar por enquanto.",
+      "esperado": {
+        "produto": "Aspirador Dyson V11",
+        "preco": "R$3.500",
+        "defeito": "bateria com duração reduzida",
+        "urgencia": "media"
+      }
+    },
+    {
+      "input": "Meu iPhone 14 Pro de R$7.000 caiu no chão e a tela rachou completamente. Não consigo usar nada no celular, é meu principal meio de trabalho!",
+      "esperado": {
+        "produto": "iPhone 14 Pro",
+        "preco": "R$7.000",
+        "defeito": "tela rachou",
+        "urgencia": "alta"
+      }
+    },
+    {
+      "input": "A cafeteira Nespresso Vertuo de R$600 está fazendo um barulho esquisito ao preparar o café, mas ainda funciona normalmente. É um barulho levinho, não atrapalha.",
+      "esperado": {
+        "produto": "Cafeteira Nespresso Vertuo",
+        "preco": "R$600",
+        "defeito": "barulho anormal durante operação",
+        "urgencia": "baixa"
+      }
+    },
+    {
+      "input": "Recebi o PlayStation 5 de R$4.500 e o controle DualSense já veio com o analógico esquerdo com drift. Impossível jogar qualquer coisa, produto defeituoso!",
+      "esperado": {
+        "produto": "PlayStation 5",
+        "preco": "R$4.500",
+        "defeito": "analógico esquerdo com drift",
+        "urgencia": "alta"
+      }
+    },
+    {
+      "input": "O teclado mecânico Keychron K2 de R$450 tem uma tecla que não registra o clique sempre, aproximadamente 1 em cada 20 pressionamentos. Não urgente.",
+      "esperado": {
+        "produto": "Teclado mecânico Keychron K2",
+        "preco": "R$450",
+        "defeito": "tecla com falha intermitente de registro",
+        "urgencia": "baixa"
+      }
+    }
+  ],
+  "sumarizacao_review": [
+    {
+      "input": "Comprei esse colchão ortopédico da marca Probel após ler muitos reviews positivos. A entrega demorou 12 dias, sendo que o prazo prometido era de 5. Ninguém me avisou sobre o atraso, fiquei sabendo só quando rastreei. A montagem foi feita por uma equipe terceirizada que deixou sujeira no quarto e não recolheu a embalagem. O colchão em si é excelente — dureza ideal, suporte lombar ótimo e já na primeira noite dormi muito melhor. O preço de R$2.200 estava dentro do mercado. Mas a experiência geral foi frustante pela logística e montagem ruins.",
+      "esperado": "• Entrega com atraso de 7 dias sem comunicação prévia\n• Montagem terceirizada deixou sujeira e embalagem no local\n• Colchão de alta qualidade com ótimo suporte lombar"
+    },
+    {
+      "input": "Produto: fone Bluetooth JBL Tune 760NC. Comprei pela promoção de R$299. A entrega foi rápida, em 2 dias. O cancelamento de ruído é muito eficiente, uso no transporte público e mal escuto o barulho. O som tem bastante grave, talvez exagerado pra quem prefere som mais plano. A bateria durou 35 horas no meu teste, próximo dos 40 anunciados. O acabamento plástico parece barato para o preço. O aplicativo JBL é instável, fechou três vezes durante a configuração. No geral, bom custo-benefício.",
+      "esperado": "• Entrega em 2 dias e excelente cancelamento de ruído\n• Bateria próxima ao prometido; acabamento plástico decepcionante\n• Aplicativo instável, mas bom custo-benefício pelo preço"
+    },
+    {
+      "input": "Impressora HP DeskJet 2774 de R$350. Configuração Wi-Fi foi um pesadelo — levei mais de duas horas para conectar e precisei assistir tutoriais no YouTube. A qualidade de impressão é boa para documentos, mas fotos ficam com cores lavadas. O consumo de tinta é alto, cartuchos originais custam quase R$80 e duram pouco. A velocidade de impressão é razoável. Para quem precisa imprimir documentos esporadicamente em casa, serve bem. Para impressão frequente ou fotos, não recomendo.",
+      "esperado": "• Configuração Wi-Fi complexa; impressão de documentos satisfatória\n• Custo de tinta alto com cartuchos de curta duração\n• Recomendada apenas para uso doméstico esporádico de documentos"
+    },
+    {
+      "input": "Recebi o tênis Nike Air Max 270 tamanho 42 em perfeita condição e dentro do prazo de 3 dias. O conforto é excepcional, passei o dia inteiro andando em São Paulo e não senti cansaço nos pés. O solado amortece muito bem mesmo em superfícies duras como asfalto e calçada. O design é moderno e chamou muita atenção — várias pessoas perguntaram onde comprei. O único ponto negativo é que o material externo risca com facilidade; após duas semanas já aparecem arranhões superficiais. No geral, recomendo muito.",
+      "esperado": "• Entrega em 3 dias; conforto e amortecimento excepcionais\n• Design moderno e atrativo que chama atenção\n• Material externo risca facilmente após curto período de uso"
+    },
+    {
+      "input": "Livro 'Sapiens' de Yuval Noah Harari, edição capa dura. A embalagem veio com amassado na lombada, provavelmente por mal acondicionamento no transporte. O conteúdo do livro é incrível — leitura envolvente, bem pesquisada e que muda a perspectiva sobre a história da humanidade. A tradução para o português ficou muito boa, fluida e precisa. Para quem gosta de história e ciência, é leitura obrigatória. Só estou descontente com o estado físico do produto recebido.",
+      "esperado": "• Livro recebido com dano físico na lombada por mau acondicionamento\n• Conteúdo excelente: leitura envolvente com tradução fluida\n• Recomendado para interessados em história, mas atentar ao acondicionamento"
+    }
+  ]
+}

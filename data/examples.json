@@ -1,0 +1,36 @@
+{
+  "classificacao_sentimento": [
+    {
+      "input": "Produto excelente, chegou antes do prazo e a qualidade é incrível!",
+      "output": "POSITIVO"
+    },
+    {
+      "input": "Veio completamente quebrado e o suporte não resolveu meu problema.",
+      "output": "NEGATIVO"
+    },
+    {
+      "input": "Produto ok, mas a entrega demorou mais do que o esperado.",
+      "output": "MISTO"
+    },
+    {
+      "input": "Produto entregue conforme pedido, sem problemas.",
+      "output": "NEUTRO"
+    }
+  ],
+  "extracao_dados": [
+    {
+      "input": "Notebook Dell i5 de R$3.500 com pixels mortos na tela, preciso urgente!",
+      "output": "{\"produto\": \"Notebook Dell i5\", \"preco\": \"R$3.500\", \"defeito\": \"pixels mortos\", \"urgencia\": \"alta\"}"
+    },
+    {
+      "input": "Cadeira escritório por R$800 com assento afundando levemente após 1 mês.",
+      "output": "{\"produto\": \"Cadeira de escritório\", \"preco\": \"R$800\", \"defeito\": \"assento afundando\", \"urgencia\": \"media\"}"
+    }
+  ],
+  "sumarizacao_review": [
+    {
+      "input": "Produto chegou no prazo, embalagem ótima, mas qualidade inferior ao anunciado. Fotos no site enganam. Atendimento do vendedor foi rápido quando reclamei.",
+      "output": "• Entrega pontual com boa embalagem\n• Qualidade do produto abaixo do anunciado — fotos enganosas\n• Atendimento do vendedor ágil na resolução"
+    }
+  ]
+}

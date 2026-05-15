@@ -1,0 +1,20 @@
+{
+  "classificacao_sentimento": {
+    "zero_shot": "Classifique o sentimento do review do cliente como POSITIVO, NEGATIVO, NEUTRO ou MISTO.\n\nInput:\n{input}\n\nResponda APENAS com uma das palavras: POSITIVO, NEGATIVO, NEUTRO ou MISTO.",
+    "few_shot": "Exemplos:\nInput: 'Produto excelente!' → Output: POSITIVO\nInput: 'Veio quebrado.' → Output: NEGATIVO\nInput: 'Bom produto, entrega ruim.' → Output: MISTO\n\nClassifique o sentimento do review do cliente como POSITIVO, NEGATIVO, NEUTRO ou MISTO.\n\nInput:\n{input}\n\nResponda APENAS com uma das palavras: POSITIVO, NEGATIVO, NEUTRO ou MISTO.",
+    "chain_of_thought": "Classifique o sentimento do review do cliente.\n\nInput:\n{input}\n\nAnalise passo a passo:\n1. Identifique expressões positivas\n2. Identifique expressões negativas\n3. Avalie o sentimento predominante\n4. Conclua: POSITIVO, NEGATIVO, NEUTRO ou MISTO",
+    "role_prompting": "Como analista sênior de CX, classifique o sentimento:\n\nInput:\n{input}\n\nResponda APENAS com uma das palavras: POSITIVO, NEGATIVO, NEUTRO ou MISTO."
+  },
+  "extracao_dados": {
+    "zero_shot": "Extraia as informações do texto de reclamação. Retorne JSON com: produto, preco, defeito, urgencia.\n\nInput:\n{input}\n\nResponda APENAS com JSON válido.",
+    "few_shot": "Exemplos:\nInput: 'Notebook Dell R$3500 tela piscando urgente!' → Output: {\"produto\": \"Notebook Dell\", \"preco\": \"R$3500\", \"defeito\": \"tela piscando\", \"urgencia\": \"alta\"}\n\nExtraia as informações do texto de reclamação. Retorne JSON com: produto, preco, defeito, urgencia.\n\nInput:\n{input}\n\nResponda APENAS com JSON válido.",
+    "chain_of_thought": "Extraia as informações do texto de reclamação.\n\nInput:\n{input}\n\nAnalise passo a passo:\n1. Identifique o produto\n2. Encontre o preço\n3. Descreva o defeito\n4. Avalie a urgência (alta/media/baixa)\n5. Monte o JSON final",
+    "role_prompting": "Como engenheiro de dados especialista em NER para e-commerce, extraia as entidades:\n\nInput:\n{input}\n\nResponda APENAS com JSON válido no formato: {\"produto\": \"...\", \"preco\": \"...\", \"defeito\": \"...\", \"urgencia\": \"...\"}"
+  },
+  "sumarizacao_review": {
+    "zero_shot": "Resuma o review do cliente em 3 bullet points objetivos começando com '•'.\n\nInput:\n{input}",
+    "few_shot": "Exemplos:\nInput: 'Review longo...' → Output: '• Ponto 1\\n• Ponto 2\\n• Ponto 3'\n\nResuma o review do cliente em 3 bullet points objetivos começando com '•'.\n\nInput:\n{input}",
+    "chain_of_thought": "Resuma o review do cliente em 3 bullet points.\n\nInput:\n{input}\n\nAnalise passo a passo:\n1. Identifique os temas principais\n2. Separe pontos positivos e negativos\n3. Selecione os 3 mais relevantes\n4. Escreva cada um como bullet com '•'",
+    "role_prompting": "Como analista sênior de CX, resuma em 3 bullet points os aspectos mais relevantes para futuros compradores:\n\nInput:\n{input}\n\nUse '•' em cada bullet. Máximo 15 palavras por bullet."
+  }
+}
